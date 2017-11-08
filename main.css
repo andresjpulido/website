@@ -5,13 +5,9 @@
 
 @font-face {
     font-family: nulshockbd;
-    src: url('fonts/nulshockbd.ttf');
+    src: url('nulshock bd.ttf');
 }
-
-@font-face {
-    font-family: AachenBold;
-    src: url('fonts/Autobus-Bold.ttf');
-}
+ 
 
  /* Set height to 100% for body and html to enable the background image to cover the whole page: */
 body, html {
@@ -26,6 +22,7 @@ hr {
 
 /* Position text in the top-left corner */
 .topleft {
+    font-family: nulshockbd;
     position: absolute;
     top: 0;
     left: 16px;
@@ -47,10 +44,9 @@ hr {
     text-align: center;
 }
 
-.name{
-    font-family:  AachenBold;
-}
+ 
 
 #demo{
     font-family: nulshockbd;
+    font-size: .5em;
 }
