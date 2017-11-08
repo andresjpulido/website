@@ -1,16 +1,16 @@
 @font-face {
     font-family: computerfont;
-    src: url('../fonts/computerfont.ttf');
+    src: url('computerfont.ttf');
 }
 
 @font-face {
     font-family: nulshockbd;
-    src: url('../fonts/nulshockbd.ttf');
+    src: url('nulshockbd.ttf');
 }
 
 @font-face {
     font-family: AachenBold;
-    src: url('../fonts/Autobus-Bold.ttf');
+    src: url('Autobus-Bold.ttf');
 }
 
  /* Set height to 100% for body and html to enable the background image to cover the whole page: */
