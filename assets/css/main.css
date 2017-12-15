@@ -5,14 +5,23 @@
 */
 
 @font-face {
-    font-family: 'computerfont';
+    font-family: 'computerfontx';
     src: url('../fonts/computerfont.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'computerfont';
+    src: url('../fonts/roboto.black.ttf') format('truetype');
 }
 
 @font-face {
     font-family: nulshockbd, helvetica;
     src: url('../fonts/nulshock bd.ttf') format('woff');
 }
+
+
+
 
 
 /*
@@ -1571,8 +1580,15 @@ h1 {
     line-height: 1.5em;
 }
 
-h2 {
-    font-size: 1.5em;
+h2 .blanco{
+    color: 3579e9;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+h2 .negro{
+    color: black;
+    font-size: 1em;
     line-height: 1.5em;
 }
 
