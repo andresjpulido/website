@@ -31,7 +31,9 @@
 			$header = $('#header'),
 			$footer = $('#footer'),
 			$main = $('#main');
-
+        
+        var showDescription = false;
+        
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
 
@@ -54,7 +56,24 @@
 
 		// Fix: Placeholder polyfill.
 			$('form').placeholder();
-
+        
+        //text
+        $("#text1").hide();
+        $("#text2").hide();
+        
+        $("#showText").click(
+            function(){ 
+                if(showDescription){
+                   $("#text1").hide(); 
+                   $("#text2").hide();
+                 } else{
+                     $("#text1").show(); 
+                     $("#text2").show(); 
+                 }
+                showDescription = !showDescription; 
+                return false; 
+        });
+        
 		// Prioritize "important" elements on medium.
 			skel.on('+medium -medium', function() {
 				$.prioritize(
