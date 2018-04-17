@@ -60,6 +60,7 @@
         //text
         $("#text1").hide();
         $("#text2").hide();
+        $("#four").hide();
         
         $("#showTextBtn").click(
             function(){ 
@@ -78,7 +79,7 @@
         $("#contactForm").click(function(){
               
              try{
-                var messagesRef = new Firebase("https://website-contacts-b3c4f.firebaseio.com/messages");
+                 var messagesRef = new Firebase("https://website-contacts-b3c4f.firebaseio.com/messages");
                  var message = {
                      name:$("#name").val(), 
                      email:$("#email").val(), 
@@ -93,7 +94,9 @@
             $("#name").val("");
             $("#email").val("");
             $("#message").val(""); 
-             
+            $("#four").show(); 
+            $("#three").hide();
+            
             return false;            
             
         });
