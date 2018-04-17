@@ -61,7 +61,7 @@
         $("#text1").hide();
         $("#text2").hide();
         
-        $("#showText").click(
+        $("#showTextBtn").click(
             function(){ 
                 if(showDescription){
                    $("#text1").hide(); 
@@ -73,6 +73,29 @@
                 showDescription = !showDescription; 
                 return false; 
         });
+ 
+ 
+        $("#contactForm").click(function(){
+            
+            console.log("-->");
+            
+             try{
+                var messagesRef = new Firebase("https://website-contacts-b3c4f.firebaseio.com/messages");
+                messagesRef.push({name:$("#name").val(), email:$("#email").val(), message:$("#message").val()});
+                 
+             } catch(err){
+                 console.log(err.message)
+             }
+            
+            $("#name").val("");
+            $("#email").val("");
+            $("#message").val(""); 
+             
+            return false;            
+            
+        });
+        
+         
         
 		// Prioritize "important" elements on medium.
 			skel.on('+medium -medium', function() {
