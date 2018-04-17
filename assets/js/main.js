@@ -76,12 +76,15 @@
  
  
         $("#contactForm").click(function(){
-            
-            console.log("-->");
-            
+              
              try{
                 var messagesRef = new Firebase("https://website-contacts-b3c4f.firebaseio.com/messages");
-                messagesRef.push({name:$("#name").val(), email:$("#email").val(), message:$("#message").val()});
+                 var message = {
+                     name:$("#name").val(), 
+                     email:$("#email").val(), 
+                     message:$("#message").val()
+                 }
+                messagesRef.push(message);
                  
              } catch(err){
                  console.log(err.message)
