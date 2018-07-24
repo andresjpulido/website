@@ -1,0 +1,16 @@
+{
+    "contact":{
+        "name":"",
+        "email":"",
+        "subject":"",
+        "date":"",
+        "hour":"",
+        "questionanswer":[{
+            "question":"",
+            "answer":"",
+            "iduser":"",
+            "date":"",
+            "hour":""            
+        }]
+    }
+}
