@@ -32,7 +32,8 @@
 			$footer = $('#footer'),
 			$main = $('#main');
         
-        var showDescription = false;
+		var showDescription = false;
+		var showMoreSamples = false;
         
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
@@ -59,9 +60,16 @@
         
         //text
         $("#text1").hide();
-        $("#text2").hide();
+		$("#text2").hide();
+		//$("#simulador").hide();
+		//$("#phrases").hide();
+		$("#profile").hide();
+		$("#countdown").hide();
+		$("#jurassic").hide();
+		$("#showMoreSamplesId").text("All samples")
         $("#four").hide();
-        
+		
+		//button text about
         $("#showTextBtn").click(
             function(){ 
                 if(showDescription){
@@ -75,7 +83,28 @@
                 return false; 
         });
  
- 
+		//button 
+		$("#showSamplesBtn").click(
+            function(){ 
+                if(showMoreSamples){
+				   //$("#simulador").hide(); 
+				   //$("#phrases").hide();
+				   $("#profile").hide();
+				   $("#countdown").hide();
+				   $("#jurassic").hide();
+				   $("#showMoreSamplesId").text("All samples")
+                 } else{
+                     $("#simulador").show(); 
+					 $("#phrases").show(); 
+					 $("#profile").show();
+					 $("#countdown").show();
+					 $("#jurassic").show();
+					 $("#showMoreSamplesId").text("Less samples")
+                 }
+				 showMoreSamples = !showMoreSamples; 
+                return false; 
+		});
+		
         $("#contactForm").click(function(){
               
              try{
