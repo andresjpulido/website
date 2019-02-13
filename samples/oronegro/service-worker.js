@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/samples/oronegro/precache-manifest.01653cbeb784e4eba8a778d54f75cea5.js"
+  "/samples/oronegro/precache-manifest.7fefcf4919da9c228d8284eaa71b0d1d.js"
 );
 
 workbox.clientsClaim();

@@ -1,13 +1,13 @@
 {
   "main.css": "/samples/oronegro/static/css/main.8b025093.chunk.css",
-  "main.js": "/samples/oronegro/static/js/main.a6012a22.chunk.js",
-  "main.js.map": "/samples/oronegro/static/js/main.a6012a22.chunk.js.map",
+  "main.js": "/samples/oronegro/static/js/main.4f1a7dc0.chunk.js",
+  "main.js.map": "/samples/oronegro/static/js/main.4f1a7dc0.chunk.js.map",
   "static/js/1.b09ba838.chunk.js": "/samples/oronegro/static/js/1.b09ba838.chunk.js",
   "static/js/1.b09ba838.chunk.js.map": "/samples/oronegro/static/js/1.b09ba838.chunk.js.map",
   "runtime~main.js": "/samples/oronegro/static/js/runtime~main.5275386f.js",
   "runtime~main.js.map": "/samples/oronegro/static/js/runtime~main.5275386f.js.map",
   "static/css/main.8b025093.chunk.css.map": "/samples/oronegro/static/css/main.8b025093.chunk.css.map",
   "index.html": "/samples/oronegro/index.html",
-  "precache-manifest.01653cbeb784e4eba8a778d54f75cea5.js": "/samples/oronegro/precache-manifest.01653cbeb784e4eba8a778d54f75cea5.js",
+  "precache-manifest.7fefcf4919da9c228d8284eaa71b0d1d.js": "/samples/oronegro/precache-manifest.7fefcf4919da9c228d8284eaa71b0d1d.js",
   "service-worker.js": "/samples/oronegro/service-worker.js"
 }
