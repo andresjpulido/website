@@ -1,13 +1,13 @@
 {
-  "main.css": "/oronegro/static/css/main.b3c95ead.chunk.css",
-  "main.js": "/oronegro/static/js/main.34e43127.chunk.js",
-  "main.js.map": "/oronegro/static/js/main.34e43127.chunk.js.map",
-  "static/js/1.0daf1244.chunk.js": "/oronegro/static/js/1.0daf1244.chunk.js",
-  "static/js/1.0daf1244.chunk.js.map": "/oronegro/static/js/1.0daf1244.chunk.js.map",
-  "runtime~main.js": "/oronegro/static/js/runtime~main.82f5e5ec.js",
-  "runtime~main.js.map": "/oronegro/static/js/runtime~main.82f5e5ec.js.map",
-  "static/css/main.b3c95ead.chunk.css.map": "/oronegro/static/css/main.b3c95ead.chunk.css.map",
-  "index.html": "/oronegro/index.html",
-  "precache-manifest.8b130ba7fda5b620be66453773c67b95.js": "/oronegro/precache-manifest.8b130ba7fda5b620be66453773c67b95.js",
-  "service-worker.js": "/oronegro/service-worker.js"
+  "main.css": "/samples/oronegro/static/css/main.8b025093.chunk.css",
+  "main.js": "/samples/oronegro/static/js/main.a6012a22.chunk.js",
+  "main.js.map": "/samples/oronegro/static/js/main.a6012a22.chunk.js.map",
+  "static/js/1.b09ba838.chunk.js": "/samples/oronegro/static/js/1.b09ba838.chunk.js",
+  "static/js/1.b09ba838.chunk.js.map": "/samples/oronegro/static/js/1.b09ba838.chunk.js.map",
+  "runtime~main.js": "/samples/oronegro/static/js/runtime~main.5275386f.js",
+  "runtime~main.js.map": "/samples/oronegro/static/js/runtime~main.5275386f.js.map",
+  "static/css/main.8b025093.chunk.css.map": "/samples/oronegro/static/css/main.8b025093.chunk.css.map",
+  "index.html": "/samples/oronegro/index.html",
+  "precache-manifest.01653cbeb784e4eba8a778d54f75cea5.js": "/samples/oronegro/precache-manifest.01653cbeb784e4eba8a778d54f75cea5.js",
+  "service-worker.js": "/samples/oronegro/service-worker.js"
 }
