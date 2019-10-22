@@ -108,7 +108,7 @@
         $("#contactForm").click(function(){
               
              try{
-                 var messagesRef = new Firebase("https://website-contacts-b3c4f.firebaseio.com/messages");
+                 var messagesRef = new Firebase("https://website-e1bf5.firebaseio.com/messages");
                  var message = {
                      name:$("#name").val(), 
                      email:$("#email").val(), 
