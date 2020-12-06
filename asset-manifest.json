@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/andresjpulido.github.io/static/css/main.fcf808cc.chunk.css",
-    "main.js": "/andresjpulido.github.io/static/js/main.5e8fec2d.chunk.js",
-    "main.js.map": "/andresjpulido.github.io/static/js/main.5e8fec2d.chunk.js.map",
-    "runtime-main.js": "/andresjpulido.github.io/static/js/runtime-main.39cf41af.js",
-    "runtime-main.js.map": "/andresjpulido.github.io/static/js/runtime-main.39cf41af.js.map",
-    "static/js/2.b7d572b8.chunk.js": "/andresjpulido.github.io/static/js/2.b7d572b8.chunk.js",
-    "static/js/2.b7d572b8.chunk.js.map": "/andresjpulido.github.io/static/js/2.b7d572b8.chunk.js.map",
-    "index.html": "/andresjpulido.github.io/index.html",
-    "precache-manifest.8a09ffdfc946c7386afa422c08b4af5c.js": "/andresjpulido.github.io/precache-manifest.8a09ffdfc946c7386afa422c08b4af5c.js",
-    "service-worker.js": "/andresjpulido.github.io/service-worker.js",
-    "static/css/main.fcf808cc.chunk.css.map": "/andresjpulido.github.io/static/css/main.fcf808cc.chunk.css.map",
-    "static/js/2.b7d572b8.chunk.js.LICENSE.txt": "/andresjpulido.github.io/static/js/2.b7d572b8.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/andresjpulido.github.io/static/media/verana-bold-webfont.c65fe7b5.woff2"
+    "main.css": "/website/static/css/main.f8b9f5e7.chunk.css",
+    "main.js": "/website/static/js/main.96dafb1e.chunk.js",
+    "main.js.map": "/website/static/js/main.96dafb1e.chunk.js.map",
+    "runtime-main.js": "/website/static/js/runtime-main.7071537a.js",
+    "runtime-main.js.map": "/website/static/js/runtime-main.7071537a.js.map",
+    "static/js/2.b7d572b8.chunk.js": "/website/static/js/2.b7d572b8.chunk.js",
+    "static/js/2.b7d572b8.chunk.js.map": "/website/static/js/2.b7d572b8.chunk.js.map",
+    "index.html": "/website/index.html",
+    "precache-manifest.24c9dd2f2bb55369d709d6c42f2335b3.js": "/website/precache-manifest.24c9dd2f2bb55369d709d6c42f2335b3.js",
+    "service-worker.js": "/website/service-worker.js",
+    "static/css/main.f8b9f5e7.chunk.css.map": "/website/static/css/main.f8b9f5e7.chunk.css.map",
+    "static/js/2.b7d572b8.chunk.js.LICENSE.txt": "/website/static/js/2.b7d572b8.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/website/static/media/verana-bold-webfont.c65fe7b5.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.39cf41af.js",
+    "static/js/runtime-main.7071537a.js",
     "static/js/2.b7d572b8.chunk.js",
-    "static/css/main.fcf808cc.chunk.css",
-    "static/js/main.5e8fec2d.chunk.js"
+    "static/css/main.f8b9f5e7.chunk.css",
+    "static/js/main.96dafb1e.chunk.js"
   ]
 }
