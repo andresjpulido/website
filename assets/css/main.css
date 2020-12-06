@@ -2444,8 +2444,9 @@ input[type="button"]:disabled,
 
 
 /* Header */
-
-#header {
+ #header {
+    
+    
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
@@ -2462,7 +2463,7 @@ input[type="button"]:disabled,
     -webkit-justify-content: space-between;
     -ms-justify-content: space-between;
     justify-content: space-between;
-    background-color: #000000;
+    background-color: #000;
     background-attachment: scroll, fixed;
     /*background-image: url("images/overlay.png"), url("../../images/bg.jpg");*/
     background-position: top left, top left;
@@ -2477,7 +2478,16 @@ input[type="button"]:disabled,
     top: 0;
     width: 35%;
 }
-
+.bg{
+    
+           
+}
+.bg::after{
+    opacity: 0.5;
+    background-color: #000;
+    background-image: url("./images/library.jpg");
+    z-index: -1; 
+}
 #header>* {
     -moz-flex-shrink: 0;
     -webkit-flex-shrink: 0;
@@ -2487,6 +2497,8 @@ input[type="button"]:disabled,
 }
 
 #header>.inner {
+     
+        
     -moz-flex-grow: 1;
     -webkit-flex-grow: 1;
     -ms-flex-grow: 1;
