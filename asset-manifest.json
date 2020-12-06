@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/andresjpulido.github.io/static/css/main.fcf808cc.chunk.css",
+    "main.js": "/andresjpulido.github.io/static/js/main.5e8fec2d.chunk.js",
+    "main.js.map": "/andresjpulido.github.io/static/js/main.5e8fec2d.chunk.js.map",
+    "runtime-main.js": "/andresjpulido.github.io/static/js/runtime-main.39cf41af.js",
+    "runtime-main.js.map": "/andresjpulido.github.io/static/js/runtime-main.39cf41af.js.map",
+    "static/js/2.b7d572b8.chunk.js": "/andresjpulido.github.io/static/js/2.b7d572b8.chunk.js",
+    "static/js/2.b7d572b8.chunk.js.map": "/andresjpulido.github.io/static/js/2.b7d572b8.chunk.js.map",
+    "index.html": "/andresjpulido.github.io/index.html",
+    "precache-manifest.8a09ffdfc946c7386afa422c08b4af5c.js": "/andresjpulido.github.io/precache-manifest.8a09ffdfc946c7386afa422c08b4af5c.js",
+    "service-worker.js": "/andresjpulido.github.io/service-worker.js",
+    "static/css/main.fcf808cc.chunk.css.map": "/andresjpulido.github.io/static/css/main.fcf808cc.chunk.css.map",
+    "static/js/2.b7d572b8.chunk.js.LICENSE.txt": "/andresjpulido.github.io/static/js/2.b7d572b8.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/andresjpulido.github.io/static/media/verana-bold-webfont.c65fe7b5.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.39cf41af.js",
+    "static/js/2.b7d572b8.chunk.js",
+    "static/css/main.fcf808cc.chunk.css",
+    "static/js/main.5e8fec2d.chunk.js"
+  ]
+}
