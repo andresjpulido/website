@@ -44,8 +44,8 @@ export default class App extends Component {
       ],
       projects: [
         { id: 1, title: "Shop", description: "Web application that manages the inventory, the creation of purchase orders, the registration of hours you work and the creation of the weekly payslip ", tags: ["Javascript", "PostgreSQl", "Nodejs"], url: "https://github.com/andresjpulido/shop", image: "timeline1.png" },
-        { id: 2, title: "Recipes", description: "Description of the Application", tags: ["Javascript", "Firebase"], url: "https://github.com/andresjpulido/recipe", image: "timeline1.png" },
-        { id: 3, title: "Puzzle", description: "Description of the Application", tags: ["typescript"], url: "https://github.com/andresjpulido/puzzle", image: "timeline1.png" }
+        { id: 2, title: "Recipes", description: "Description of the Application", tags: ["Javascript", "Firebase"], url: "https://github.com/andresjpulido/recipe", image: "recipes.png" },
+        { id: 3, title: "Puzzle", description: "Description of the Application", tags: ["typescript"], url: "https://github.com/andresjpulido/puzzle", image: "puzzle.png" }
       ],
 
       contactItems: [

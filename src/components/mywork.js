@@ -6,7 +6,8 @@ export default class MyWork extends Component {
 
         const projectsItems = this.props.projects.map((item) =>
 
-            <div className="project-card" key={item.id.toString()}>
+            <div className="project-card" style={{ backgroundImage: 'url(' + require(`../assets/images/projects/${item.image}`) + ')' }} 
+                key={item.id.toString()}>
                 <h1>{item.title}</h1>                
                 <p>{item.description}</p>
                 <p>

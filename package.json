@@ -2,7 +2,7 @@
   "name": "website2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://andresjpulido.com/andresjpulido.github.io/",
+  "homepage": "http://andresjpulido.com",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
@@ -22,7 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && echo 'andresjpulido.com' > ./build/CNAME",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
