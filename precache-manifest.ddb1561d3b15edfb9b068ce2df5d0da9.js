@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c64eee3925d6f93b4480cf97ae457219",
+    "revision": "eff2303e44d57cc375217b059d84c3d2",
     "url": "/index.html"
   },
   {
-    "revision": "4f275f2c864f2655e69c",
+    "revision": "1adf56e00de5ac5c4bfa",
     "url": "/static/css/main.7754788b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.b7d572b8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4f275f2c864f2655e69c",
-    "url": "/static/js/main.ffb44bbc.chunk.js"
+    "revision": "1adf56e00de5ac5c4bfa",
+    "url": "/static/js/main.27fb85bd.chunk.js"
   },
   {
     "revision": "a2c5978bd7c25e241655",
@@ -30,6 +30,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c0fa4450190363e0239c72513510db92",
     "url": "/static/media/background.c0fa4450.png"
+  },
+  {
+    "revision": "12c159ed9a9308cf3a8b40a633f2cf73",
+    "url": "/static/media/puzzle.12c159ed.png"
+  },
+  {
+    "revision": "949c8ac4fb7fa002e7f6c530f893b3a5",
+    "url": "/static/media/recipes.949c8ac4.png"
   },
   {
     "revision": "1d9a88c67fd8262a63d440f2735e9b78",
