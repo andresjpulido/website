@@ -1,0 +1,87 @@
+@import "../../styles/variables.scss";
+
+footer {
+    background-color: $dark;   
+    text-align: center;
+    font-size: 2rem;
+}
+
+div.footer-sentence {   
+  border-top: .1px solid $secundary;  
+  color: $superlight;
+  display: flex;
+  justify-content: space-between;  
+  margin-left: 6rem;
+  margin-right: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+div.footer-line {  
+  margin-left: 6rem;
+  margin-right: 6rem;
+  border-top: .1px solid $secundary;    
+}
+
+.footer-networks { 
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 6rem;
+  margin-right: 6rem;  
+}
+
+.footer-item-networks {
+  flex: 1 0 35%; /* explanation below */
+  margin: .5rem;
+  height: 4rem;
+  font-size: 1rem;
+  padding-top: 2rem;
+}
+
+.footer-item-networks:hover {
+color: $primary;
+}
+
+.footer-copy {
+  font-size: .7rem;
+  padding: 1rem;
+}
+
+.parent {
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+
+.child {
+  flex: 1 0 45%;
+}
+
+
+div.child:first-child {
+  text-align: right;
+  margin:.5rem;
+  font-size: 3rem;
+  padding-right: .5rem;
+}
+
+div.child:first-child:hover {
+  a{
+    color: $superlight;
+  }
+  background-color: $primary;
+}
+
+div.child:last-child {
+  text-align: left;
+  margin:  auto .5rem;
+  padding-left: .5rem;
+  line-height: 3.5rem;
+}
+
+div.child:last-child:hover {
+  a {
+    color: $superlight;
+  }
+  background-color: $primary;
+}

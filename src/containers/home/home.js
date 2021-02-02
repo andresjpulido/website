@@ -1,29 +1,29 @@
 import React, { Component, Fragment } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import contactItemsList from '../../data/contactItems.json';
+import './home.scss';
 
 export default class Home extends Component {
 
     render() {
 
-        const mainContactItems = this.props.contactItems.filter(function (element) {
+        const mainContactItems = contactItemsList.filter(function (element) {
             return element.isBrand;
           }).map((item) =>
       
             <li key={item.id.toString()} className="main-networks">
-              <a href={item.url} target="_blank" title={item.label}>
+              <a href={item.url} target="_blank" title={item.label} rel="noopener" >
                 <FontAwesomeIcon
                   className="icon-active"
                   icon={[item.iconFamily, item.icon]}
                   key={item.id}
                   size="lg" />
-              </a></li>
-      
-      
+              </a></li>      
           );
 
         return <Fragment>
 
-            <section id="home" class="anchor">
+            <section id="home" className="anchor">
                 <div>
                     <p className="title">
                         Hi, <br />

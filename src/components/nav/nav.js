@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
- 
+import './nav.scss'
+
 export default class Nav extends Component { 
 
   
@@ -32,13 +33,13 @@ export default class Nav extends Component {
       </div>
     );
 
-    return <Fragment>
+    return (
 
       <nav>
       
         <div id="navItems">
           <div className="item icons">
-            <img id="icon" src="favicon.ico" />
+            <img id="icon" src="favicon.ico" alt="icon" />
           </div>
           {navItems}
         </div>
@@ -50,6 +51,6 @@ export default class Nav extends Component {
         </div>
       </nav>
 
-    </Fragment>
+    )
   }
 }
