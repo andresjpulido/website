@@ -22,7 +22,7 @@
         "id": 3,
         "isBrand": true,
         "label": "Mail",
-        "text": "Mail me",
+        "text": "Mail",
         "iconFamily": "far",
         "icon": "envelope",
         "url": "mailto:andresjpulido@gmail.com"

@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './footer.scss';
 import contactItemsList from '../../data/contactItems.json';
@@ -8,8 +8,8 @@ export default function Footer() {
     return (
         <footer>
             <div className="footer-sentence">
-                New challenges and learning
-                    <FontAwesomeIcon className="icon" icon={["fas", "cogs"]} />
+                Looking for new challenges and learning 
+                <FontAwesomeIcon className="footer-sentence-icon" icon={["fas", "cogs"]} />
             </div>
 
             <div className="footer-line" />
@@ -22,14 +22,14 @@ export default function Footer() {
 
                             <div className="parent">
                                 <div className="child">
-                                    <a href={item.url} target="_blank" title={item.label}>
+                                    <a href={item.url} target="_blank" title={item.label} rel="noreferrer">
                                         <FontAwesomeIcon
                                             icon={[item.iconFamily, item.icon]}
                                             key={item.id} />
                                     </a>
                                 </div>
                                 <div className="child">
-                                    <a href={item.url} target="_blank" title={item.label}>
+                                    <a href={item.url} target="_blank" title={item.label} rel="noreferrer">
                                         {item.text}
                                     </a>
                                 </div>

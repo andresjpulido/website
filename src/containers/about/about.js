@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import './about.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default class About extends Component {

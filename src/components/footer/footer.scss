@@ -43,26 +43,30 @@ color: $primary;
 }
 
 .footer-copy {
+  color: $secundary;
   font-size: .7rem;
   padding: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;  
 }
 
 .parent {
   display: flex;
   flex-wrap: nowrap;
-
 }
 
 .child {
   flex: 1 0 45%;
 }
-
-
+ 
 div.child:first-child {
+  background-color: $secundary;
+  border-radius: .3rem;
   text-align: right;
   margin:.5rem;
   font-size: 3rem;
   padding-right: .5rem;
+
 }
 
 div.child:first-child:hover {
@@ -73,15 +77,66 @@ div.child:first-child:hover {
 }
 
 div.child:last-child {
+ 
   text-align: left;
   margin:  auto .5rem;
   padding-left: .5rem;
   line-height: 3.5rem;
+  a {
+    color: $secundary;
+  }  
 }
 
 div.child:last-child:hover {
   a {
-    color: $superlight;
+    color: $primary;
   }
-  background-color: $primary;
+   
 }
+
+
+
+@media only screen and (min-width : 176px) and  (max-width : 600px) {
+  div.footer-sentence {   
+    margin-right: 1rem;
+    margin-left: 1rem;
+  } 
+  .footer-sentence-icon {
+    display: none;
+  } 
+}
+ 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+
+  div.footer-sentence {   
+    margin-right: 3rem;
+    margin-left: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+
+

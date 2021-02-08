@@ -104,13 +104,10 @@ section {
 
 .anchor:before {
   display: block;
-  content: " ";   
-  height: 60px;
+  content: " ";  
   visibility: hidden;
 }
-
-
-
+ 
 
 li.contact-networks {
   display: block;
@@ -165,6 +162,11 @@ a.active {
   color: $primary;
 }
 
+a.inactive {
+  color: $superlight;
+}
+
+
 .page-container {
 
 
@@ -177,11 +179,15 @@ a.active {
 }
 
 .section-logo {
-  color: $secundary;
+  color: $light;
   font-size: 6rem;
   margin: auto;
   margin-right: 3rem;
 }
+
+
+
+
 
 /*************************************************/
 /* Extra small devices (phones, 600px and down) */
@@ -199,16 +205,14 @@ a.active {
   }
 
   .section-logo {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-right: 1.5rem;
   }
 
-
+  .anchor:before {
+    height: 60px;
+  }
   
-
-
- 
-
   .padre {
     height: 535px;
   }
@@ -255,10 +259,13 @@ a.active {
 @media only screen and (min-width: 600px) {
 
 
-  section{
-    
+  section{    
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .anchor:before {
+    height: 60px;
   }
 
 }
@@ -267,7 +274,9 @@ a.active {
 
 @media only screen and (min-width: 768px) {
  
-
+  .anchor:before {
+    height: 60px;
+  }
 
   article {
     margin-top: 0;
@@ -280,7 +289,11 @@ a.active {
 
 /* Large devices (laptops/desktops, 992px and up) */
 
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+  .anchor:before {
+    height: 0px;
+  }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
@@ -290,6 +303,13 @@ a.active {
     margin-left: 0px;
   }
 
+  section {
+    padding-top: 1rem;
+  }
+
+  .anchor:before {
+    height: 60px;
+  }
 
 }
 

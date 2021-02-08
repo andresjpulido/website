@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component} from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './nav.scss'
@@ -11,7 +11,7 @@ export default class Nav extends Component {
     const navItems = this.props.menu.map(item =>
       <div className="item" title={item.label} key={"div_" + item.id.toString()}>
         <div className="item-text">
-          <a href={item.ref} id={item.id.toString()} className={item.isActive ? "active" : ""} onClick={(e) => {
+          <a href={item.ref} id={item.id.toString()} className={item.isActive ? "active" : "inactive"} onClick={(e) => {
             this.props.handler(e, item.id)
           }}>
             <FontAwesomeIcon
@@ -26,7 +26,7 @@ export default class Nav extends Component {
     const menuItems = this.props.menu.map(item =>
       <div className={item.isActive ? "item-menu-active" : "item-menu"} title={item.label} key={"div2_" + item.id.toString()}>
         <div className="item-menu-text">
-          <a href={item.ref} id={item.id.toString()} title={item.ref} className={item.isActive ? "active" : ""} onClick={(e) => {
+          <a href={item.ref} id={item.id.toString()} title={item.ref} className={item.isActive ? "active" : "inactive"} onClick={(e) => {
             this.props.handler(e, item.id)
           }}>{item.label}</a>
         </div>
@@ -47,7 +47,6 @@ export default class Nav extends Component {
           <div className="menu">
             {menuItems}
           </div>
-
         </div>
       </nav>
 

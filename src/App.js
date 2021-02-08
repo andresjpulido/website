@@ -37,9 +37,10 @@ export default class App extends Component {
   }
 
   handleScroll = (event) => {
+/*
     let scrollTop = event.srcElement.body.scrollTop;
     let itemTranslate = Math.min(0, scrollTop / 3 - 60);
-
+*/
     this.setState({ transform: window.scrollY })
 
     let aboutTop = 0;
@@ -48,15 +49,15 @@ export default class App extends Component {
 
     let experienceTop = 0;
     if (document.getElementById("experience"))
-      aboutTop = document.getElementById("experience").offsetTop;
+      experienceTop = document.getElementById("experience").offsetTop;
 
     let myworkTop = 0;
     if (document.getElementById("mywork"))
-      aboutTop = document.getElementById("mywork").offsetTop;
+      myworkTop = document.getElementById("mywork").offsetTop;
 
     let contactTop = 0;
     if (document.getElementById("contact"))
-      aboutTop = document.getElementById("contact").offsetTop;
+      contactTop = document.getElementById("contact").offsetTop;
 
     let id = 0;
     let scrollY = parseInt(window.scrollY);
@@ -76,12 +77,6 @@ export default class App extends Component {
     if (scrollY >= contactTop)
       id = 5
 
-    // if (scrollY >= contactTop - 5 && scrollY < multiverseTop)
-    //   id = 4
-
-    // if (scrollY >= multiverseTop)
-    //   id = 5
-
     this.handlerItemMenu(null, id)
 
   }
@@ -89,7 +84,7 @@ export default class App extends Component {
   handlerItemMenu = (e, id) => {
 
     let oldList = this.state.menu;
-
+ 
     const newList = oldList.map((item) => {
       if (item.id === id) {
         let updatedItem = {
@@ -112,7 +107,7 @@ export default class App extends Component {
     });
 
     this.setState({ menu: newList })
-    console.log(newList)
+     
   }
 
   render() {

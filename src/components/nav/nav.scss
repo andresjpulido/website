@@ -1,4 +1,6 @@
-nav {
+@import "../../styles/variables.scss";
+
+  nav {
     background-color: black;
   }
   
@@ -19,6 +21,8 @@ nav {
   .menu {
     padding-right: 3rem;
     background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   
   .item-text {

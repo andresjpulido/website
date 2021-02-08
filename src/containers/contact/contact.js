@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './contact.scss'
 
@@ -29,18 +29,19 @@ export default class Contact extends Component {
                     <div className="row">
 
                         <div className="col-50">
-                            <p>I am living in Auckland, New Zealand.</p>
+                            <p className="dark">I am living in Auckland, New Zealand.</p>
                             <div className="box">
-                                <img src={auckland} />
+                                <img src={auckland} alt="map" />
                             </div>
                         </div>
 
-
                         <div className="col-50">
 
-                            <form method="post" onSubmit={this.handleSubmit} >
+                            <p className="dark form">
+                                To contact me, please fill in the following form and write me a comment and I will be glad to answer you soon.
+                            </p>
 
-                                <p className="dark">To contact me, please fill in the following form and write me a comment and I will be glad to answer you soon.</p>
+                            <form method="post" onSubmit={this.handleSubmit} >
 
                                 <div className="rddow">
                                     <div>

@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import contactItemsList from '../../data/contactItems.json';
 import './home.scss';
@@ -12,7 +12,7 @@ export default class Home extends Component {
           }).map((item) =>
       
             <li key={item.id.toString()} className="main-networks">
-              <a href={item.url} target="_blank" title={item.label} rel="noopener" >
+              <a href={item.url} target="_blank" rel="noreferrer" title={item.label}>
                 <FontAwesomeIcon
                   className="icon-active"
                   icon={[item.iconFamily, item.icon]}
@@ -21,9 +21,7 @@ export default class Home extends Component {
               </a></li>      
           );
 
-        return <Fragment>
-
-            <section id="home" className="anchor">
+        return  (<section id="home" className="anchor">
                 <div>
                     <p className="title">
                         Hi, <br />
@@ -39,7 +37,6 @@ export default class Home extends Component {
                 </div>
 
             </section>
-
-        </Fragment>
+        )
     }
 }

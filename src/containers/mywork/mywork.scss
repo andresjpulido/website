@@ -1,7 +1,7 @@
 @import "../../styles/variables.scss";
 
 section#mywork {    
-    background-color: black;
+    background-color: $superlight;
 }
 
 section#mywork > div > h2 {
@@ -24,6 +24,7 @@ section#mywork > div > h2 {
   width: 250px;
   border: 1px solid $secundary;   
   vertical-align: top;
+  margin: 1rem;
 }
     
   div.project-card h1 {

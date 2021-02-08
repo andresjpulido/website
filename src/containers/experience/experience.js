@@ -16,7 +16,7 @@ export default class Experience extends Component {
                         <FontAwesomeIcon icon={["fas", "globe"]} className="section-logo" />
                     </div>
 
-                    <p>Desarrollando aplicaciones web en plataformas, lenguajes e infraestructuras diversas.</p>
+                    <p>This job is great! , I have participated in projects with many people from different cultures, interesting technologies and many interesting topics. </p>
                     <br />
                     <Timeline />
                     <br /><br /><br />
