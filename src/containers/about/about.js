@@ -27,10 +27,11 @@ export default class About extends Component {
                     </div>
                     <div className="columns">
                         <p className="width20">Future</p>
-                        <p className="solid-left-side width80">Then I worked for several years in the development of J2EE enterprise applications for intranet over Websphere Application Server and SQL Server in public and private entities. In my last project, our team built an internet application that encourages digital sales in a bank, in this project I learned a lot about user interface and architecture oriented to microservices.</p>
+                        <p className="solid-left-side width80">I stay hungry! I seek to be part of a great team with which we achieve a high quality in the development and an agile publication in production of products that serve and generate value to society.
+This year I will create content on the internet to share knowledge and share experiences with developers from all over the world. </p>
                     </div>
                     <div className="columns">
-                        <p className="width20">Interes</p>
+                        <p className="width20">Interest</p>
                         <p className="solid-left-side width80">Hiking, arduino Uno and learning python.</p>
                     </div>
                 </div>
