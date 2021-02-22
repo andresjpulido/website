@@ -131,7 +131,12 @@
         width: 22px; 
         height: 22px;
     }
-
+    p.form {
+        padding-left: 1rem;
+    }
+    form {
+        margin-left: 2rem;
+    }
   }
    
   /* Small devices (portrait tablets and large phones, 600px and up) */
