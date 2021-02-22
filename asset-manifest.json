@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.e1e09ea2.chunk.css",
-    "main.js": "/static/js/main.732c691a.chunk.js",
-    "main.js.map": "/static/js/main.732c691a.chunk.js.map",
+    "main.css": "/static/css/main.c808ffd8.chunk.css",
+    "main.js": "/static/js/main.15bb29cf.chunk.js",
+    "main.js.map": "/static/js/main.15bb29cf.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fa961822.js",
     "runtime-main.js.map": "/static/js/runtime-main.fa961822.js.map",
     "static/js/2.04d79e7b.chunk.js": "/static/js/2.04d79e7b.chunk.js",
     "static/js/2.04d79e7b.chunk.js.map": "/static/js/2.04d79e7b.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.e1e09ea2.chunk.css.map": "/static/css/main.e1e09ea2.chunk.css.map",
+    "static/css/main.c808ffd8.chunk.css.map": "/static/css/main.c808ffd8.chunk.css.map",
     "static/js/2.04d79e7b.chunk.js.LICENSE.txt": "/static/js/2.04d79e7b.chunk.js.LICENSE.txt",
     "static/media/auckland.596fc113.png": "/static/media/auckland.596fc113.png",
     "static/media/home.scss": "/static/media/background.d57577e6.png",
+    "static/media/timeline.scss": "/static/media/up.99f43d42.svg",
     "static/media/App.scss": "/static/media/verana-bold-webfont.a8ec4250.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.fa961822.js",
     "static/js/2.04d79e7b.chunk.js",
-    "static/css/main.e1e09ea2.chunk.css",
-    "static/js/main.732c691a.chunk.js"
+    "static/css/main.c808ffd8.chunk.css",
+    "static/js/main.15bb29cf.chunk.js"
   ]
 }
