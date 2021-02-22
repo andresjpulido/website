@@ -11,6 +11,7 @@ export default class Contact extends Component {
     }
 
     handleSubmit(event) {
+        console.log("send message")
         event.preventDefault();
     }
 
@@ -35,13 +36,14 @@ export default class Contact extends Component {
                             </div>
                         </div>
 
-                        <div className="col-50">
+
+                        <div className="col-50 disable">
 
                             <p className="dark form">
                                 To contact me, please fill in the following form and write me a comment and I will be glad to answer you soon.
                             </p>
 
-                            <form method="post" onSubmit={this.handleSubmit} >
+                            <form method="post"  >
 
                                 <div className="rddow">
                                     <div>
@@ -53,7 +55,7 @@ export default class Contact extends Component {
                                             <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
                                         </div>
                                     </div>
-                                    <a href="#" className="button" id="contactForm">Send Message!</a>
+                                    <a href="#" className="button" id="contactForm" onClick={this.handleSubmit}>Send Message!</a>
                                 </div>
                             </form>
                         </div>
