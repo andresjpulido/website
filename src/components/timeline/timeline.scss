@@ -8,6 +8,7 @@
     text-align: center;
     border-left-style: solid;
     background-color: #333;
+
 }
 
 .swiper > ul {
@@ -46,7 +47,7 @@
     font-size: .8rem;
 }
 
-.carousel .page > h1 {
+.carousel .page > li > h1 {
     color: $superlight;
 }
 
@@ -79,6 +80,18 @@
 }
 
 
+#first {
+    content:url('arrows/up.svg');
+    width: 22px; 
+    height: 22px;
+}
+
+#last {
+    content:url('arrows/down.svg');
+    width: 22px; 
+    height: 22px;
+}
+
 
 @media only screen and (min-width : 176px) and  (max-width : 600px) {
     .timeline {
@@ -87,6 +100,36 @@
 
     .swiper {
         width: 100%;
+    }
+
+    .swiper > ul > li {
+        display: inline-block;
+        margin-left: 0px;
+        margin-right: .5rem;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+
+    }
+
+    .carousel{
+        width: 100%; 
+    }
+
+    .carousel > ul {
+        margin-left: 0px;
+        padding-left: .7rem;
+    }
+
+    #first {
+        content:url('arrows/left.svg');
+        width: 22px; 
+        height: 22px;
+    }
+
+    #last {
+        content:url('arrows/right.svg');
+        width: 22px; 
+        height: 22px;
     }
 
   }
