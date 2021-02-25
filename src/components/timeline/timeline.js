@@ -64,7 +64,7 @@ export default function Timeline() {
                 <ul className="swiperd">
                     <li>
                         <a href="#" onClick={(e) => { e.preventDefault(); }}>
-                            <img id="first" />
+                            <div id="first" />
                         </a>
                     </li>
                     {
@@ -80,7 +80,7 @@ export default function Timeline() {
                     }
                     <li>
                         <a href="#" onClick={(e) => { e.preventDefault(); }}>
-                            <img id="last" />
+                            <div id="last" />
                         </a>
                     </li>
                 </ul>
