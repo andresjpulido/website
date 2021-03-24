@@ -34,7 +34,7 @@ export default class MyWork extends Component {
                 <div className="page-container">
 
                     <div className="section-header">
-                        <h2 className="dark">Samples</h2>
+                        <h2 className="dark">My work</h2>
                         <FontAwesomeIcon icon={["fas", "sd-card"]} className="section-logo" />
                     </div>
 

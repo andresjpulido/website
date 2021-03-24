@@ -1,0 +1,116 @@
+@import "../../styles/variables.scss";
+
+section#mywork {    
+    background-color: $superlight;
+}
+
+section#mywork > div > h2 {
+    color: $light;
+}
+
+.project-card-container{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    justify-content:space-between;
+}
+
+.project-card {
+  background-image: "../../assets/images/projects/recipes.png";
+  background-size: cover;
+  background-position-y: 1.5rem;
+  height: 20rem;
+  width: 250px;
+  border: 1px solid $secundary;   
+  vertical-align: top;
+  margin: 1rem;
+}
+    
+  div.project-card h1 {
+    font-size: 1.5rem;
+    font-family: 'veranabold2';
+    text-align: center;
+    background-color: black;
+    color:#EEE;
+    margin: 0ch;
+    padding: 1rem;;
+    vertical-align: middle;
+  }
+  
+  div.project-card p{
+    display:none;
+  }
+  
+  div.project-card a{
+    display: none;
+    font-size: .7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: end;
+  }
+   
+  .project-card:hover{
+    background-color: black;
+    background-size: 0%; 
+    transition: 0.5s;
+    border: 1px solid $primary;
+  }
+  
+  .project-card:hover h1{
+    color: $primary;
+  }
+  
+  .project-card:hover p{
+    color: $secundary;
+    background-size: 0%; 
+    display: block;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 1rem;
+    padding-right: 1rem;
+     
+  }
+  
+  .project-card:hover a{
+    color: $primary;
+    background-size: 0%; 
+    display: block; 
+    margin-right: 1rem;
+  }
+  
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+
+}

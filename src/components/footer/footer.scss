@@ -1,142 +1,132 @@
 @import "../../styles/variables.scss";
 
 footer {
-    background-color: $dark;   
-    text-align: center;
-    font-size: 2rem;
+	background-color: $dark;
+	text-align: center;
+	font-size: 2rem;
 }
 
-div.footer-sentence {   
-  border-top: .1px solid $secundary;  
-  color: $superlight;
-  display: flex;
-  justify-content: space-between;  
-  margin-left: 6rem;
-  margin-right: 6rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+div.footer-sentence {
+	border-top: 0.1px solid $secundary;
+	color: $superlight;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 6rem;
+	margin-right: 6rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 }
 
-div.footer-line {  
-  margin-left: 6rem;
-  margin-right: 6rem;
-  border-top: .1px solid $secundary;    
+div.footer-line {
+	margin-left: 6rem;
+	margin-right: 6rem;
+	border-top: 0.1px solid $secundary;
 }
 
-.footer-networks { 
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 6rem;
-  margin-right: 6rem;  
+.footer-networks {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 3rem;
+	margin-right: 3rem;
 }
 
 .footer-item-networks {
-  flex: 1 0 35%; /* explanation below */
-  margin: .5rem;
-  height: 4rem;
-  font-size: 1rem;
-  padding-top: 2rem;
+	flex: 1 0 35%; /* explanation below */
+	margin: 0.5rem;
+	height: 4rem;
+	font-size: 1rem;
+	padding-top: 2rem;
 }
 
 .footer-item-networks:hover {
-color: $primary;
+	color: $primary;
 }
 
 .footer-copy {
-  color: $secundary;
-  font-size: .7rem;
-  padding: 1rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;  
+	color: $secundary;
+	font-size: 0.7rem;
+	padding: 1rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 }
 
 .parent {
-  display: flex;
-  flex-wrap: nowrap;
+	display: flex;
+	flex-wrap: nowrap;
 }
 
 .child {
-  flex: 1 0 45%;
+	flex: 1 0 45%;
 }
- 
-div.child:first-child {
-  background-color: $secundary;
-  border-radius: .3rem;
-  text-align: right;
-  margin:.5rem;
-  font-size: 3rem;
-  padding-right: .5rem;
 
+div.child:first-child {
+	background-color: $secundary;
+	border-radius: 0.3rem;
+	text-align: right;
+	margin: 0.5rem;
+	font-size: 3rem;
+	padding-right: 0.5rem;
 }
 
 div.child:first-child:hover {
-  a{
-    color: $superlight;
-  }
-  background-color: $primary;
+	a {
+		color: $superlight;
+	}
+	background-color: $primary;
 }
 
 div.child:last-child {
- 
-  text-align: left;
-  margin:  auto .5rem;
-  padding-left: .5rem;
-  line-height: 3.5rem;
-  a {
-    color: $secundary;
-  }  
+	text-align: left;
+	margin: auto 0.5rem;
+	padding-left: 0.5rem;
+	line-height: 3.5rem;
+	a {
+		color: $secundary;
+	}
 }
 
 div.child:last-child:hover {
-  a {
-    color: $primary;
-  }
-   
+	a {
+		color: $primary;
+	}
 }
 
-
-
-@media only screen and (min-width : 176px) and  (max-width : 600px) {
-  div.footer-sentence {   
-    margin-right: 1rem;
-    margin-left: 1rem;
-  } 
-  .footer-sentence-icon {
-    display: none;
-  } 
+@media only screen and (min-width: 176px) and (max-width: 600px) {
+	div.footer-sentence {
+		margin-right: 1rem;
+		margin-left: 1rem;
+	}
+	.footer-sentence-icon {
+		display: none;
+	}
+	div.child:first-child {
+		text-align: center;
+		padding: 0.5rem;
+	}
 }
- 
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (min-width: 600px) {
-
-  div.footer-sentence {   
-    margin-right: 3rem;
-    margin-left: 3rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
-  
+	div.footer-sentence {
+		margin-right: 3rem;
+		margin-left: 3rem;
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 
 @media only screen and (min-width: 992px) {
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-
 }
-
-
-

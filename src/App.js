@@ -4,7 +4,7 @@ import './App.scss';
 
 import Contact from './containers/contact'
 import About from './containers/about'
-import MyWork from './containers/mywork'
+import MyWork from './containers/mywork1'
 import Nav from './components/nav'
 import Footer from './components/footer';
 import Home from './containers/home'

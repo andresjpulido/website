@@ -6,7 +6,10 @@
         "tags": [
             "Javascript",
             "PostgreSQl",
-            "Nodejs"
+            "Nodejs", 
+            "HTML", 
+            "ReactJS", 
+            "Boostrap"
         ],
         "url": "https://github.com/andresjpulido/shop",
         "image": "timeline1.png"
@@ -17,7 +20,9 @@
         "description": "Web application that works as a repository of food recipes where the user searches, associates a category and creates their own recipes. ",
         "tags": [
             "Javascript",
-            "Firebase"
+            "Firebase",
+            "HTML", 
+            "ReactJS"
         ],
         "url": "https://github.com/andresjpulido/recipes",
         "image": "recipes.png"
@@ -27,7 +32,9 @@
         "title": "Puzzle",
         "description": "This puzzle is a board game whose objective is to order a set of numbers correctly moving the tokens of it.",
         "tags": [
-            "typescript"
+            "typescript",
+            "HTML", 
+            "ReactJS"
         ],
         "url": "https://github.com/andresjpulido/puzzle",
         "image": "puzzle.png"
