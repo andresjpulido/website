@@ -1,28 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Timeline from '../../components/timeline'
 import './experience.scss'
 
-export default class Experience extends Component {
+export default function Experience() {
 
-    render() {
+    return (
+        <section id="experience" className="anchor">
+            <div className="page-container">
 
-        return (
-            <section id="experience" className="anchor">
-                <div className="page-container">
-
-                    <div className="section-header">
-                        <h2 className="light">Experience</h2>
-                        <FontAwesomeIcon icon={["fas", "globe"]} className="section-logo" />
-                    </div>
-
-                    <p>This job is great! , I have participated in projects with many people from different cultures, interesting technologies and many interesting topics. </p>
-                    <br />
-                    <Timeline />
-                    <br /><br /><br />
+                <div className="section-header">
+                    <h2 className="light">Experience</h2>
+                    <FontAwesomeIcon icon={["fas", "globe"]} className="section-logo" />
                 </div>
-            </section>
-        )
 
-    }
+                <p>This job is great! , I have participated in projects with many people from different cultures, interesting technologies and many interesting topics. </p>
+                <br />
+                <Timeline />
+                <br /><br /><br />
+            </div>
+        </section>
+    )
 }

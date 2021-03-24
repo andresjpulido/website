@@ -4,7 +4,7 @@ import './App.scss';
 
 import Contact from './containers/contact'
 import About from './containers/about'
-import MyWork from './containers/mywork1'
+import MyWork from './containers/mywork'
 import Nav from './components/nav'
 import Footer from './components/footer';
 import Home from './containers/home'
@@ -37,10 +37,10 @@ export default class App extends Component {
   }
 
   handleScroll = (event) => {
-/*
-    let scrollTop = event.srcElement.body.scrollTop;
-    let itemTranslate = Math.min(0, scrollTop / 3 - 60);
-*/
+    /*
+        let scrollTop = event.srcElement.body.scrollTop;
+        let itemTranslate = Math.min(0, scrollTop / 3 - 60);
+    */
     this.setState({ transform: window.scrollY })
 
     let aboutTop = 0;
@@ -84,7 +84,7 @@ export default class App extends Component {
   handlerItemMenu = (e, id) => {
 
     let oldList = this.state.menu;
- 
+
     const newList = oldList.map((item) => {
       if (item.id === id) {
         let updatedItem = {
@@ -107,7 +107,7 @@ export default class App extends Component {
     });
 
     this.setState({ menu: newList })
-     
+
   }
 
   render() {
@@ -125,7 +125,7 @@ export default class App extends Component {
           <MyWork />
           <Contact />
           <Footer />
-          
+
         </article>
 
 

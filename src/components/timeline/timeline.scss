@@ -23,9 +23,19 @@
 
 .swiper .selected {
     color: $primary;
+    background-color: $secundary;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
- 
+.swiper .noselected {
+    background-color: $secundary;
+    border: none;
+    color: $light;
+    font-size: 1rem;
+}
+
 .carousel {
     width: 70%;
     align-items: stretch;

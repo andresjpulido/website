@@ -1,42 +1,40 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import contactItemsList from '../../data/contactItems.json';
 import './home.scss';
 
-export default class Home extends Component {
+export default function Home() {
 
-    render() {
+    const mainContactItems = contactItemsList.filter(function (element) {
+        return element.isBrand;
+    }).map((item) =>
 
-        const mainContactItems = contactItemsList.filter(function (element) {
-            return element.isBrand;
-          }).map((item) =>
-      
-            <li key={item.id.toString()} className="main-networks">
-              <a href={item.url} target="_blank" rel="noreferrer" title={item.label}>
+        <li key={item.id.toString()} className="main-networks">
+            <a href={item.url} target="_blank" rel="noreferrer" title={item.label}>
                 <FontAwesomeIcon
-                  className="icon-active"
-                  icon={[item.iconFamily, item.icon]}
-                  key={item.id}
-                  size="lg" />
-              </a></li>      
-          );
+                    className="icon-active"
+                    icon={[item.iconFamily, item.icon]}
+                    key={item.id}
+                    size="lg" />
+            </a></li>
+    );
 
-        return  (<section id="home" className="anchor">
-                <div>
-                    <p className="title">
-                        Hi, <br />
+    return (<section id="home" className="anchor">
+        <div>
+            <p className="title">
+                Hi, <br />
                   I'm Andres Pulido,<br />
                   Software developer<br />
-                        <span className="home-h2">Web developement / J2EE / SPA Applications</span>
-                    </p>
-                </div>
-                <div id="social-networks">
-                    <ul>
-                        {mainContactItems}
-                    </ul>
-                </div>
+                <span className="home-h2">Web developement / J2EE / SPA Applications</span>
+            </p>
+        </div>
+        <div id="social-networks">
+            <ul>
+                {mainContactItems}
+            </ul>
+        </div>
 
-            </section>
-        )
-    }
+    </section>
+    )
+
 }

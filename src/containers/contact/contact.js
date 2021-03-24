@@ -55,7 +55,7 @@ export default class Contact extends Component {
                                             <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
                                         </div>
                                     </div>
-                                    <a href="#" className="button" id="contactForm" onClick={this.handleSubmit}>Send Message!</a>
+                                    <button href="#" className="button" id="contactForm" onClick={this.handleSubmit}>Send Message!</button>
                                 </div>
                             </form>
                         </div>

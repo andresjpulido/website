@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import wexperience from '../../data/wexperience.json'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './timeline.scss'
- 
 
 export default function Timeline() {
-
 
     const [currentPageIndex, setCurrentPageIndex] = useState(0);
 
@@ -63,25 +60,25 @@ export default function Timeline() {
             <div className="swiper">
                 <ul className="swiperd">
                     <li>
-                        <a href="#" onClick={(e) => { e.preventDefault(); }}>
+                        <button href="#" className="selected" onClick={(e) => { e.preventDefault(); }}>
                             <div id="first" />
-                        </a>
+                        </button>
                     </li>
                     {
                         years.map((year, index) => <li key={index}>
                             {
                                 wexperience[currentPageIndex].year === year ?
-                                    <a href="#" className="selected" onClick={(e) => { e.preventDefault(); }}>{year}</a>
+                                    <button href="#" className="selected" onClick={(e) => { e.preventDefault(); }}>{year}</button>
                                     :
-                                    <a href="#" onClick={(e) => { e.preventDefault(); }}>{year}</a>
+                                    <button href="#" className="noselected" onClick={(e) => { e.preventDefault(); }}>{year}</button>
                             }
 
                         </li>)
                     }
                     <li>
-                        <a href="#" onClick={(e) => { e.preventDefault(); }}>
+                        <button href="#" className="selected" onClick={(e) => { e.preventDefault(); }}>
                             <div id="last" />
-                        </a>
+                        </button>
                     </li>
                 </ul>
 
