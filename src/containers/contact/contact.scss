@@ -4,6 +4,11 @@ section#contact {
 
 }
 
+.contact-page{
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
 form {
      
     padding-bottom: 4rem;
@@ -34,7 +39,10 @@ p.form {
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
-
+  .contact-page{
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */

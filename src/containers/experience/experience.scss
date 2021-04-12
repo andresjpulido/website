@@ -4,44 +4,77 @@ section#experience {
     background-color: $dark;
 }
 
+section#experience > div > p:first-of-type {
+	font-weight: bold;
+	line-height: 2rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
 
 section#experience > div >  h2 {
      
 }
 
 
-/* Extra small devices (phones, 600px and down) */
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+     
+}
 
-@media only screen and (max-width: 600px) {
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
 
 }
 
-/* Extra small devices (phones, 600px and down) */
-
-@media only screen and (max-width: 600px) {
-
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 600px) {
+    section#experience > div > p:first-of-type {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-
-@media only screen and (min-width: 600px) {
-
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+     
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-
-@media only screen and (min-width: 768px) {
-
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-
-@media only screen and (min-width: 992px) {
-
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+     
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+     
+}
 
-@media only screen and (min-width: 1200px) {
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+     
+}
 
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+     
 }

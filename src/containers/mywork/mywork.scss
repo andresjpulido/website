@@ -38,6 +38,7 @@ section#mywork > div > h2 {
 
 .project-description p {
 	color: $secundary;
+	line-height: 2rem;
 }
 
 .project-description a {
@@ -52,7 +53,7 @@ section#mywork > div > h2 {
 .project-tech-item {
 	color: $tertiary;
 	background-color: $primary;
-	font-size: .8rem;	
+	font-size: .7rem;	
 	margin-right: .5rem;
 	margin-bottom: .5rem;
 	padding: 0.5rem;

@@ -29,7 +29,7 @@ export default class Contact extends Component {
 
                     <div className="row">
 
-                        <div className="col">
+                        <div className="col contact-page">
                             <p className="dark">I am living in Auckland, New Zealand.</p>
                             <div className="box">
                                 <img src={auckland} alt="map" />
