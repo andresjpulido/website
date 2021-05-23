@@ -6,14 +6,21 @@ import contactItemsList from '../../data/contactItems.json';
 export default function Footer() {
 
     return (
-        <footer>
-            <div className="footer-sentence">
-                Looking for new challenges and learning 
-                <FontAwesomeIcon className="footer-sentence-icon" icon={["fas", "cogs"]} />
+        <footer id="contact" className="anchor">
+ 
+            <div className="section-header">
+                <h2 className="light">Contact</h2>
+                <FontAwesomeIcon icon={["fas", "address-book"]} className="section-logo" />
             </div>
-
+            <br /><br />
+            <div className="footer-sentence">
+                Looking for new challenges and learning
+                
+            </div>
+            <FontAwesomeIcon className="footer-sentence-icon" icon={["fas", "cogs"]} />
+            <br /><br />
             <div className="footer-line" />
-
+            <br /><br />
             <div className="footer-networks">
                 {
                     contactItemsList.map((item) =>
@@ -39,11 +46,11 @@ export default function Footer() {
                     )
                 }
             </div>
-
+            <br /><br />
             <div className="footer-copy">
                 © 2021 Andres Pulido, Auckland New Zealand
                 </div>
-
+                <br /><br />
         </footer>
     )
 }
