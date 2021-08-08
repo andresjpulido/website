@@ -123,7 +123,7 @@ export default class App extends Component {
           <About />
           <Experience />
           <MyWork />
-           
+          <Contact /> 
           <Footer />
 
         </article>

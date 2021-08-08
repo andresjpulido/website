@@ -14,7 +14,7 @@ export default function Experience() {
                     <FontAwesomeIcon icon={["fas", "globe"]} className="section-logo" />
                 </div>
 
-                <p>This job is great! , I have participated in projects with many people from different cultures, interesting technologies and many interesting topics. </p>
+                <p>Software developement is great! , I have participated in projects with many people from different cultures, interesting technologies and many interesting topics. </p>
                 <br />
                 <Timeline />
                 <br /><br /><br />

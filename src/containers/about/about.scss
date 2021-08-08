@@ -13,9 +13,7 @@ section#about > div > p:first-of-type {
 	font-weight: bold;
 	font-family: arial;
 	color: $secundary;
-	line-height: 2rem;
-	margin-left: 3rem;
-	margin-right: 3rem;
+	line-height: 2rem; 
 }
 
 .width80 {
@@ -23,21 +21,22 @@ section#about > div > p:first-of-type {
 }
 
 .solid-left-side {
-	border-left: $primary 0.5rem solid;
-	padding: 1rem;
+	padding-top: 1rem;
+	
 	line-height: 2rem;
 }
 
 .columns {
 	display: flex;
 	flex-wrap: nowrap;
-	margin-left: 3rem;
-	margin-right: 3rem;
+	margin-left: 0rem;
+	margin-right: 0rem;
 }
 
 div.columns > p:first-child {
 	font-weight: bold;
-	padding: 1rem;
+	padding-top: 1rem;
+	margin-right: 3rem;
 	width: 20%;
 }
 
@@ -54,7 +53,7 @@ div.columns > p:first-child {
 		font-size: 1.5rem;
 	}
 	.solid-left-side {
-		padding-left: 3rem;
+		
 	}
   section#about > div > p:first-of-type {
     margin-left: 0rem;
@@ -76,6 +75,12 @@ div.columns > p:first-child {
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
+
+	.solid-left-side {
+		border-left: $primary 0.5rem solid;
+		padding-left: 3rem;
+	}
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

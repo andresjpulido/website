@@ -13,11 +13,10 @@ export default function About() {
                     <FontAwesomeIcon icon={["fas", "user-circle"]} className="section-logo" />
                 </div>
 
-
-                <p className="">Software developer, walker, passionate about technology, interested in learning and creating fantastic things. Systems Engineer expert in business applications J2ee, SOA, web applications and single-page applications.</p>
+                <h3 className="">Software developer, walker, passionate about technology, interested in learning and creating fantastic things. Systems Engineer expert in business applications J2EE, SOA, web applications and single-page applications.</h3>
 
                 <div className="columns">
-                    <p className="">GIS school</p>
+                    <p className="width20">GIS school</p>
                     <p className="solid-left-side width80">I started developing geographic information systems, working with mapserver, Oracle Spatial, PostGis, ArcIms, geographic metadata, etc, this world is cool !!! It was a great learning experience; this kind of projects allow you to experiment and learn new things, also graphically they are striking and are very useful.</p>
                 </div>
                 <div className="columns">

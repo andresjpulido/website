@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './contact.scss'
 
 import auckland from '../../assets/images/auckland.png'
+import { bd } from '../../services/firebase';
 
 export default class Contact extends Component {
 
@@ -13,6 +14,19 @@ export default class Contact extends Component {
     handleSubmit(event) {
         console.log("send message")
         event.preventDefault();
+        /*
+        try {
+            db.ref("chats").on("value", snapshot => {
+              let chats = [];
+              snapshot.forEach((snap) => {
+                chats.push(snap.val());
+              });
+              this.setState({ chats });
+            });
+          } catch (error) {
+            this.setState({ readError: error.message });
+          }
+          */
     }
 
     render() {

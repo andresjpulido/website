@@ -7,12 +7,12 @@ export default function Footer() {
 
     return (
         <footer id="contact" className="anchor">
- 
+ <div className="page-container">
             <div className="section-header">
                 <h2 className="light">Contact</h2>
                 <FontAwesomeIcon icon={["fas", "address-book"]} className="section-logo" />
             </div>
-            <br /><br />
+             
             <div className="footer-sentence">
                 Looking for new challenges and learning
                 
@@ -51,6 +51,7 @@ export default function Footer() {
                 © 2021 Andres Pulido, Auckland New Zealand
                 </div>
                 <br /><br />
+                </div>
         </footer>
     )
 }

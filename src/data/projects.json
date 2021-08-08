@@ -16,6 +16,20 @@
     },
     {
         "id": 2,
+        "title": "Pocket's astronomy",
+        "description": "This application shows some information available in the public API of NASA. ",
+        "tags": [
+            "ReactJS",
+            "Nasa Api",
+            "CC3",
+            "HTML"             
+        ],
+        "url": "https://github.com/andresjpulido/nasa",
+        "image": "pocket-astronomy.png",
+        "website":"https://nasa.andresjpulido.com/"
+    },    
+    {
+        "id": 3,
         "title": "Recipes",
         "description": "Web application that works as a repository of food recipes where the user searches, associates a category and creates their own recipes. ",
         "tags": [
@@ -28,7 +42,7 @@
         "image": "recipes.png"
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "Puzzle",
         "description": "This puzzle is a board game whose objective is to order a set of numbers correctly moving the tokens of it.",
         "tags": [

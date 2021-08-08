@@ -5,7 +5,9 @@ import './mywork.scss'
 
 export default function MyWork() {
 
-    const projectsItems = projects.map((item, index) => {
+    const projectsItems = projects.filter(function (pilot) {
+        return pilot.id <= 2;
+      }).map((item, index) => {
 
         let u = process.env.PUBLIC_URL + `/images/projects/${item.image}`
 
@@ -33,6 +35,12 @@ export default function MyWork() {
                         <a href={item.url} target="_blank" rel="noreferrer" title="go Github">go Github</a>
                     </p>
 
+                    {
+                        item.website &&
+                        <p>
+                            <a href={item.website} target="_blank" rel="noreferrer" title="go demo">Website</a>
+                        </p>
+                    }
                 </div>
 
             </div>
