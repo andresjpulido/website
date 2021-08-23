@@ -14,13 +14,16 @@ section#mywork > div > h2 {
 
 .project {
 	display: flex;
-	margin-bottom: 7rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
 }
 
 .project-preview {
-	flex: 1 0 50%;
 	background-size: cover;
+	padding-top: 2rem;
 	text-align: center;
+	width: 100%;
 }
 
 .project-preview img {
@@ -30,11 +33,12 @@ section#mywork > div > h2 {
 
 .project-description {
 	padding-left: 1rem;
-	width: 90%;
+	width: 100%;
 }
 
 .project-description h1 {
 	color: $primary;
+	font-size: 1.5rem;
 }
 
 .project-description p {
@@ -47,16 +51,16 @@ section#mywork > div > h2 {
 }
 
 .project-tech {
-    display: flex;
-    flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .project-tech-item {
 	color: $tertiary;
-	background-color: $primary;
-	font-size: .7rem;	
-	margin-right: .5rem;
-	margin-bottom: .5rem;
+	background-color: $secundary;
+	font-size: 0.7rem;
+	margin-right: 0.5rem;
+	margin-bottom: 0.5rem;
 	padding: 0.5rem;
 	border-radius: 0.5rem;
 }
@@ -124,9 +128,6 @@ div.project-card a {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-	.project {
-		flex-wrap: wrap;
-	}
 }
 
 /* Smartphones (landscape) ----------- */
@@ -139,34 +140,46 @@ div.project-card a {
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-	.card {
-		flex: 1 1 30rem;
+	.project-preview {
+		width: 45%;
+	}
+
+	.project-description {
+		padding-left: 1rem;
+		width: 45%;
 	}
 }
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-	.card {
-		flex: 1 1 30rem;
-	}
 }
 
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-	.card {
-		flex: 1 1 30rem;
-	}
 }
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
-	.card {
-		flex: 1 1 30rem;
+	.project-preview {
+		width: 45%;
+	}
+
+	.project-description {
+		padding-left: 1rem;
+		width: 45%;
 	}
 }
 
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
+	.project-preview {
+		width: 45%;
+	}
+
+	.project-description {
+		padding-left: 1rem;
+		width: 45%;
+	}
 }
 
 /* iPhone 4 ----------- */

@@ -1,13 +1,11 @@
-@import '../../styles/variables.scss';
-
 footer {
-    background-color: $dark;
+    background-color: black;
     text-align: center;
     font-size: 2rem;
 }
 
 .footer-copy {
-    color: $secundary;
+    color: #333;
     font-size: 0.7rem;
     padding: 1rem;
     padding-top: 4rem;
@@ -15,6 +13,10 @@ footer {
 }
 
 @media only screen and (min-width: 176px) and (max-width: 600px) {
+    div.footer-sentence {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
     .footer-sentence-icon {
         display: none;
     }
@@ -25,21 +27,6 @@ footer {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-
-@media only screen and (min-width: 600px) {
-}
-
 /* Medium devices (landscape tablets, 768px and up) */
-
-@media only screen and (min-width: 768px) {
-}
-
 /* Large devices (laptops/desktops, 992px and up) */
-
-@media only screen and (min-width: 992px) {
-}
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-
-@media only screen and (min-width: 1200px) {
-}

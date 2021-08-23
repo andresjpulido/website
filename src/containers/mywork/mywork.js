@@ -1,70 +1,77 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import projects from '../../data/projects.json'
-import './mywork.scss'
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import projects from "../../data/projects.json";
+import "./mywork.scss";
 
 export default function MyWork() {
+	const projectsItems = projects
+		.filter(function (pilot) {
+			return pilot.id <= 2;
+		})
+		.map((item, index) => {
+			let u = process.env.PUBLIC_URL + `/images/projects/${item.image}`;
 
-    const projectsItems = projects.filter(function (pilot) {
-        return pilot.id <= 2;
-      }).map((item, index) => {
+			return (
+				<div className="project" key={index}>
+					<div className="project-preview">
+						<img src={u} alt={item.title} />
+					</div>
 
-        let u = process.env.PUBLIC_URL + `/images/projects/${item.image}`
+					<div className="project-description">
+						<h1>{item.title}</h1>
+						<p>{item.description}</p>
 
-        return (
-            <div className="project" key={index}>
+						<div className="project-tech">
+							{item.tags.map((tag, indextag) => (
+								<div className="project-tech-item" key={indextag}>
+									{tag}
+								</div>
+							))}
+						</div>
 
-                <div className="project-preview" >
-                    <img src={u} alt={item.title} />
+						<p>
+							<a
+								href={item.url}
+								target="_blank"
+								rel="noreferrer"
+								title="go Github"
+							>
+								go Github
+							</a>
 
-                </div>
+							{item.website && (
+								<span>
+									{" "}
+									|{" "}
+									<a
+										href={item.website}
+										target="_blank"
+										rel="noreferrer"
+										title="go demo"
+									>
+										Online demo
+									</a>
+								</span>
+							)}
+						</p>
+					</div>
+				</div>
+			);
+		});
 
-                <div className="project-description">
-                    <h1>{item.title}</h1>
-                    <p>{item.description}</p>
+	return (
+		<section id="mywork" className="anchor">
+			<div className="page-container">
+				<div className="section-header">
+					<h2 className="dark">My work</h2>
+					<FontAwesomeIcon icon={["fas", "sd-card"]} className="section-logo" />
+				</div>
 
-                    <div className="project-tech">
-                        {
-                            item.tags.map((tag, indextag) => (
-                                <div className="project-tech-item" key={indextag}>{tag}</div>
-                            ))
-                        }
-                    </div>
-
-                    <p>
-                        <a href={item.url} target="_blank" rel="noreferrer" title="go Github">go Github</a>
-                    </p>
-
-                    {
-                        item.website &&
-                        <p>
-                            <a href={item.website} target="_blank" rel="noreferrer" title="go demo">Website</a>
-                        </p>
-                    }
-                </div>
-
-            </div>
-
-        )
-    });
-
-    return (
-        <section id="mywork" className="anchor">
-
-            <div className="page-container">
-
-                <div className="section-header">
-                    <h2 className="dark">My work</h2>
-                    <FontAwesomeIcon icon={["fas", "sd-card"]} className="section-logo" />
-                </div>
-
-                <div className="project-container">
-                    {projectsItems}
-                </div>
-                <br /><br /><br />
-            </div>
-
-        </section>
-    )
-
+				<div className="project-container">{projectsItems}</div>
+				<br />
+				<br />
+				<br />
+			</div>
+		</section>
+	);
 }

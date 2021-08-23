@@ -6,13 +6,13 @@
         "tags": [
             "Javascript",
             "PostgreSQl",
-            "Nodejs", 
-            "HTML", 
-            "ReactJS", 
+            "Nodejs",
+            "HTML",
+            "ReactJS",
             "Boostrap"
         ],
         "url": "https://github.com/andresjpulido/shop",
-        "image": "timeline1.png"
+        "image": "shop.png"
     },
     {
         "id": 2,
@@ -22,12 +22,12 @@
             "ReactJS",
             "Nasa Api",
             "CC3",
-            "HTML"             
+            "HTML"
         ],
         "url": "https://github.com/andresjpulido/nasa",
-        "image": "pocket-astronomy.png",
-        "website":"https://nasa.andresjpulido.com/"
-    },    
+        "image": "pocket-astronomy.jpg",
+        "website": "https://nasa.andresjpulido.com/"
+    },
     {
         "id": 3,
         "title": "Recipes",
@@ -35,7 +35,7 @@
         "tags": [
             "Javascript",
             "Firebase",
-            "HTML", 
+            "HTML",
             "ReactJS"
         ],
         "url": "https://github.com/andresjpulido/recipes",
@@ -47,7 +47,7 @@
         "description": "This puzzle is a board game whose objective is to order a set of numbers correctly moving the tokens of it.",
         "tags": [
             "typescript",
-            "HTML", 
+            "HTML",
             "ReactJS"
         ],
         "url": "https://github.com/andresjpulido/puzzle",
