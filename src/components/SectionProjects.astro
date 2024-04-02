@@ -1,32 +1,63 @@
-<section id="projects" class=" bg-two py-24">
-  <header class="flex justify-center items-center flex-wrap">
+<section id="projects" class="bg-two py-24">
+  <header class="mt-16 flex justify-center items-center flex-wrap">
     <h2 class="text-3xl md:text-5xl font-poppinsbold">Portfolio</h2>
   </header>
-  <article class="py-16 px-16">
-    <section class="flex gap-8 flex-wrap">
-      
+  <article class="py-6 px-16">
+    <h3
+      class="mt-4 font-poppins font-semibold text-3xl md:text-3xl pb-8 text-center"
+    >
+      Artisan Shop
+    </h3>
+
+    <section class="grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-10">
+      <div>
+        <h4
+          class="font-poppins font-semibold text-2xl md:text-xl md:leading-loose mt-8 mb-2 text-seven text-center"
+        >
+          The Objective
+        </h4>
+        <p class="leading-8 text-seven">
+          In a small business that creates an average of two thousand units of product, it is necessary to keep inventory control and track the units to be distributed in the store, the warehouse and the workshop, in this place repairs and product by charge. Additionally, it is required to specify the number of hours spent by each employee to make the respective payment..
+        </p>
+      </div>
+      <div class="">
+        <h4
+          class="font-poppins font-semibold text-2xl md:text-xl md:leading-loose mt-8 mb-2 text-seven text-center"
+        >
+          Solution
+        </h4>
+        <p class="leading-8 text-seven">
+          This project includes the analysis, design and implementation of an application that supports the main business requirements, an administration module and four modules where the functionalities are grouped were defined.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="md:my-44 my-8 grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-2"
+    >
+      <div>
         <img
           decoding="async"
           loading="lazy"
           src="/images/shop.png"
-          alt=""
+          alt="Cover - sdfsd"
           title=""
-          class="size-22"
+          class="size-22 drop-shadow-lg m-auto"
         />
-      
-      <div class=" ">
-        <h3
-          class="font-poppins font-semibold text-3xl md:text-3xl md:leading-loose"
+      </div>
+      <div class="">
+        <h4
+          class="font-poppins font-semibold text-2xl md:text-xl md:leading-loose mt-8 mb-2 text-seven text-center"
         >
-          Shop
-        </h3>
-        <p class="leading-loose">
-          Web application that manages the inventory, the creation of purchase
-          orders, the registration of hours you work and the creation of the
-          weekly payslip.
+          Artisan Shop
+        </h4>
+        <p class="leading-8 text-seven">
+          Artisan Shop is a web application that manages the inventory, the
+          creation of purchase orders, the registration of hours you work and
+          the creation of the weekly payslip.
         </p>
 
-        <div class="flex  gap-2 my-4 flex-wrap">
+        <div class="flex gap-2 my-6 flex-wrap">
           <div class="rounded-xl bg-three text-two px-3 py-2 flex items-center">
             <span class="text-xs">Javascript</span>
           </div>
@@ -48,40 +79,49 @@
         </div>
 
         <p>
+          To see the source code go to
           <a
             href="https://github.com/andresjpulido/shop"
             target="_blank"
             rel="noreferrer"
-            title="go Github"
+            title="Repository Github"
             class="text-three"
           >
-            go Github
-          </a>
+            the Github website</a
+          > and to read the technical documentation <a
+            href="https://github.com/andresjpulido/shop/wiki"
+            target="_blank"
+            rel="noreferrer"
+            title="Wiki page in Github"
+            class="text-three"
+          >
+            read the wiki page</a
+          >.
         </p>
       </div>
     </section>
     <section>
       <h4
-        class="font-poppins font-semibold text-2xl md:text-2xl md:leading-loose my-4"
+        class="font-poppins font-semibold text-xl md:text-xl md:leading-loose my-8 text-center"
       >
         Modules
       </h4>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam ad
-        praesentium maxime ut quasi vitae iure fugit provident dignissimos quas
-        porro dolor, hic sunt enim magnam neque laudantium odit quis?
-      </p>
-    </section>
-    <section>
-      <h4
-        class="font-poppins font-semibold text-2xl md:text-2xl md:leading-loose my-4"
-      >
-        Architecture
-      </h4>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam ad
-        praesentium maxime ut quasi vitae iure fugit provident dignissimos quas
-        porro dolor, hic sunt enim magnam neque laudantium odit quis?
+      <img
+        decoding="async"
+        loading="lazy"
+        src="/images/artisan shop - modules.png"
+        alt="Modules shop app"
+        title="Modules shop app"
+        class="w-full"
+      />
+      <p class="py-6 leading-8">
+        The creation of a type of product, its editing, the registration of new
+        products, the assignment of a location are carried out through the
+        inventory module. The creation of purchase orders are registered in the
+        orders module. In the timesheep module, the number of hours worked is
+        recorded and finally the application allows you to generate the payslip
+        for the configured period. There is a module to configure some system
+        parameters and manage users.
       </p>
     </section>
   </article>
