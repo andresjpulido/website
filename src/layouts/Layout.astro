@@ -7,6 +7,7 @@ interface Props {
   image: string;
   frontmatter: string;
   robots: string;
+  domain: string;
 }
 
 const { title, description, image, frontmatter, robots } = Astro.props;
@@ -17,27 +18,12 @@ const { title, description, image, frontmatter, robots } = Astro.props;
   <head>
     <meta charset="UTF-8" /> 
     <meta name="viewport" content="width=device-width" /> 
-    <meta name="generator" content={Astro.generator} />
-    <meta
-      name="description"
-      content={description}
-    />
-    <meta property="og:title" content={title} />
-    <meta
-      property="og:description"
-      content={description}
-    />
-    <meta
-      property="og:image"
-      content={image}
-    />
-    <meta property="og:image:alt" content={title} />
+    <meta name="generator" content={Astro.generator} /> 
     <meta name="theme-color" content="var(--primary-color)" />
     <link rel="icon" href="favicon.ico" />
-    <title>{title}</title>
-
+    <title>{title}</title> 
     <Seo {title} {description} url={Astro.url} {image} {frontmatter} {robots} />
-    
+
   </head>
   <body class="f">
     <slot />

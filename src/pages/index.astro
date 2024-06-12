@@ -14,12 +14,13 @@ const {
   image= "https://andresjpulido.com/images/AndresPulido.png",
   frontmatter,
   robots,
+  domain = "andresjpulido.com"
 } = Astro.props;
 
 ---
 
 
-<Layout {title} {description} {image} {frontmatter} {robots}>
+<Layout {title} {description} {image} {frontmatter} {robots} {domain}>
   <Nav />
   <Cover />
   <SectionProjects />
