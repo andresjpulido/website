@@ -1,16 +1,6 @@
 ---
 import Seo from "../components/Seo.astro";
-
-interface Props {
-  title: string;
-  description: string;
-  image: string;
-  frontmatter: string;
-  robots: string;
-  domain: string;
-}
-
-const { title, description, image, frontmatter, robots } = Astro.props;
+import siteData from "../data/siteData.json"; 
 ---
 
 <!doctype html>
@@ -21,8 +11,8 @@ const { title, description, image, frontmatter, robots } = Astro.props;
     <meta name="generator" content={Astro.generator} /> 
     <meta name="theme-color" content="var(--primary-color)" />
     <link rel="icon" href="favicon.ico" />
-    <title>{title}</title> 
-    <Seo {title} {description} url={Astro.url} {image} {frontmatter} {robots} />
+    <title>{siteData.title}</title> 
+    <Seo {siteData} />
 
   </head>
   <body class="f">

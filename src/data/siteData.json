@@ -2,7 +2,10 @@
     "title": "Andres Pulido - software Developer",
     "description": "A seasoned software developer with over a decade of experience in the world of coding. I'm deeply passionate about technology and consider myself a lifelong learner, always eager to explore new horizons in the ever-evolving tech landscape.",
     "image": {
-      "src": "/images/AndresPulido.png",
+      "src": "https://andresjpulido.com/images/AndresPulido.png",
       "alt": "Andres Pulido - photo"
-    }
+    },
+    "domain":"andresjpulido.com",
+    "keywords": "Software developer, NodeJs, ReactJS, Python",
+    "site_name": "Andres Pulido"
   }
