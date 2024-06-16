@@ -7,5 +7,10 @@
     },
     "domain":"andresjpulido.com",
     "keywords": "Software developer, NodeJs, ReactJS, Python",
-    "site_name": "Andres Pulido"
+    "site_name": "Andres Pulido",
+    "workLocation":"Hamilton, New Zealand",
+    "knowsAbout":"Web development",
+    "jobTitle":"Software Developer",
+    "knowsLanguage":"en-US,es-CO",
+    "hasCredential": "Bachelor of Science in Systems Engineering"
   }

@@ -1,9 +1,8 @@
-import siteData from "../data/siteData.json"
+import siteData from "../data/siteData.json";
 import { slugify } from "./utils";
 
-
 export default function jsonLDGenerator({ type, post, url }) {
-  if (type === 'post') {
+  if (type === "post") {
     return `<script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -27,9 +26,16 @@ export default function jsonLDGenerator({ type, post, url }) {
   return `<script type="application/ld+json">
       {
       "@context": "https://schema.org/",
-      "@type": "WebSite",
+      "@type": "Person",
       "name": "${siteData.title}",
-      "url": "${import.meta.env.SITE}"
+      "url": "${import.meta.env.SITE}",
+      "image":"${siteData.image.src}",
+      "workLocation":"${siteData.workLocation}",
+      "description": "${siteData.description}",
+      "knowsAbout": "${siteData.knowsAbout}",
+      "jobTitle": "${siteData.jobTitle}",
+      "knowsLanguage": "${siteData.knowsLanguage}",
+      "hasCredential": "${siteData.hasCredential}"
       }
     </script>`;
 }
