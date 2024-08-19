@@ -13,7 +13,7 @@ import siteData from "../data/siteData.json";
     <link rel="icon" href="favicon.ico" />
     <title>{siteData.title}</title> 
     <Seo {siteData} />
-
+    <link rel="preload" href="/images/desktop.webp" as="image" />
   </head>
   <body class="f">
     <slot />
