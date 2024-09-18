@@ -1,12 +1,12 @@
 {
-    "title": "Andres Pulido | software Developer",
-    "description": "A seasoned software developer with over a decade of experience in the world of coding. I'm deeply passionate about technology and consider myself a lifelong learner, always eager to explore new horizons in the ever-evolving tech landscape.",
+    "title": "Andres Pulido | Software Developer",
+    "description": "A seasoned software developer with over a decade of experience in the world of coding.",
     "image": {
       "src": "https://andresjpulido.com/images/Andres-Pulido.png",
       "alt": "Andres Pulido - photo"
     },
     "domain":"andresjpulido.com",
-    "keywords": "Software developer, NodeJs, ReactJS, Python",
+    "keywords": "Software developer, NodeJs, ReactJS, Python programming, Javascript, andresjpulido",
     "site_name": "Andres Pulido",
     "workLocation":"Hamilton, New Zealand",
     "knowsAbout":"Web development",
