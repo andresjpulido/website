@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://andresjpulido.com/sitemap-index.xml
