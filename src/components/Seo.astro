@@ -1,15 +1,15 @@
 ---
 import jsonLDGenerator from "../js/jsonLD";
 
-const { url = Astro.url, siteData } = Astro.props;
+const { url = Astro.url, siteData, post } = Astro.props;
 
-const { title, description, image, frontmatter, robots, domain, keywords, site_name } =
+const { title, description, image, robots, domain, keywords, site_name } =
   siteData;
 
-const jsonLD = jsonLDGenerator({
-  type: frontmatter ? "post" : "website",
-  post: frontmatter,
-  url,
+const jsonLD = jsonLDGenerator(siteData, {
+  type: post ? "post" : "website",
+  post: post,
+  url
 });
 ---
 

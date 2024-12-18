@@ -1,16 +1,13 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
+import LogoIcon from "./logoIcon.astro";
 ---
 
 <Fragment>
   <!-- desktop -->
   <nav class="hidden md:block sticky top-0 bg-one z-10">
     <header class="flex flex-row items-center justify-between px-16 py-2">
-      <div
-        class="bg-three rounded-full text-two size-10 text-xl font-poppinsblack flex items-center justify-center"
-      >
-        ap
-      </div>
+      <LogoIcon />
       <ul class="unset flex gap-4 [&>li]:p-0 justify-end" data-attr="nav">
         <li>
           <HeaderLink href="#home" class="text-seven font-black"
@@ -23,7 +20,6 @@ import HeaderLink from "./HeaderLink.astro";
         <li>
           <HeaderLink href="/#aboutme" class="text-nine">About Me</HeaderLink>
         </li>
-        
       </ul>
     </header>
   </nav>

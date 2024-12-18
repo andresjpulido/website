@@ -18,6 +18,28 @@
   src: url("/fonts/OpenSans-Bold.ttf");
 }
 
+@font-face {
+  font-family: "computerfont";
+  src: url("/fonts/Computerfont.ttf");
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+  #md-style p{
+    @apply my-2 leading-relaxed tracking-wide text-four text-lg font-light
+  }
+  #md-style h2 {
+    @apply text-xl mt-8 font-poppinsbold text-one
+  }
+  #md-style li {
+    @apply list-disc ml-4 my-4 text-lg font-light tracking-wide
+  } 
+  #md-style ul{
+    @apply my-2
+  }
+}

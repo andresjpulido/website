@@ -10,7 +10,8 @@ export default {
       poppins: ["poppins", "sans-serif"],
       poppinsblack: ["poppinsblack", "sans-serif"],
       poppinsbold: ["poppinsbold", "sans-serif"],
-      poppinsextrabold: ["poppinsextrabold", "sans-serif"]
+      poppinsextrabold: ["poppinsextrabold", "sans-serif"],
+      computerfont: ["computerfont"],
     },
     backgroundImage: {
       "desktop": "url('/images/desktop.png')",
@@ -18,7 +19,7 @@ export default {
     colors: {
       one: "#0d0d0d",
       two: "#f7f7f7",
-      three: "#3579e9",
+      three: "#1E88E5",
       four: "#333",
       five: "#ef7a05",
       six: "#66A4A5",

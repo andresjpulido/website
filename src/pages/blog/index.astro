@@ -1,0 +1,97 @@
+---
+import Seo from "../../components/Seo.astro";
+import BlogHeader from "../../components/BlogHeader.astro";
+import Footer from "../../components/Footer.astro";
+
+import { getCollection } from "astro:content";
+import FormattedDate from "../../components/FormattedDate.astro";
+import siteData from "../../data/siteData.json";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+); 
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Seo {siteData} />
+  </head>
+  <body>
+    <BlogHeader />
+    <main class="border-b-2 py-2 border-two mb-4 w-[728px] mx-auto">
+      <h1 class="font-poppinsbold text-4xl my-4 mt-6">Welcome to my Blog</h1>
+      <p>
+        This is the space where i share articles about programming. I have
+        divide in categories:
+      </p>
+
+      <section>
+        <ul
+          class="flex flex-row items-center gap-2 my-4 py-4 text-xs text-four border-b-2 border-two"
+        >
+          <h2 class="font-poppins font-bold text-three">TOPICS</h2>
+          <li
+            class="text-two bg-three border border-three py-1 px-2 rounded-md hover:cursor-pointer"
+          >
+            ReactJS
+          </li>
+          <li
+            class="text-three border border-three py-1 px-2 rounded-md hover:cursor-pointer"
+          >
+            NodeJS
+          </li>
+          <li
+            class="text-three border border-three py-1 px-2 rounded-md hover:cursor-pointer"
+          >
+            Astro
+          </li>
+          <li
+            class="text-three border border-three py-1 px-2 rounded-md hover:cursor-pointer"
+          >
+            Svg
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <ul>
+          {
+            posts.map((post, index) => (
+              <li>
+                <article class="flex flex-row gap-6 border-b-2 py-4 border-two">
+                  <header class="w-[450px]">
+                    <h3 class="font-poppinsbold text-2xl">
+                      <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
+                    </h3>
+                    <p class="font-poppins text-base line-clamp-2 text-seven mt-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Eaque nesciunt molestias accusantium nulla iusto commodi
+                      voluptate porro ut. Nostrum nihil illo hic? Eum quidem
+                      vitae, repellat consequatur numquam enim dolores?
+                    </p>
+                    <p class="text-xs mt-4">
+                      <FormattedDate date={post.data.pubDate} />
+                    </p>
+                  </header>
+                  <section class="p-2">
+                    <a href={`/blog/${post.slug}/`}>
+                      <img
+                        width={160}
+                        height={100}
+                        src={post.data.heroImage}
+                        alt=""
+                        class="rounded-md"
+                      />
+                    </a>
+                  </section>
+                </article>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>

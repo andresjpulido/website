@@ -1,19 +1,31 @@
 ---
 import Seo from "../components/Seo.astro";
-import siteData from "../data/siteData.json"; 
+import siteData from "../data/siteData.json";
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" /> 
-    <meta name="viewport" content="width=device-width" /> 
-    <meta name="generator" content={Astro.generator} /> 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
     <meta name="theme-color" content="var(--primary-color)" />
-    <link rel="icon" href="favicon.ico" />
-    <title>{siteData.title}</title> 
-    <Seo {siteData} />
+    <link rel="icon" href="/favicon.ico" />
+    <title>{siteData.title}</title>
+    <Seo {siteData} frontmatter="post" />
     <link rel="preload" href="/images/desktop.webp" as="image" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5E8FYWZR84"
+    ></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-5E8FYWZR84");
+    </script>
   </head>
   <body class="f">
     <slot />
