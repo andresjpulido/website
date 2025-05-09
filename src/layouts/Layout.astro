@@ -13,7 +13,7 @@ import siteData from "../data/siteData.json";
     <link rel="icon" href="/favicon.ico" />
     <title>{siteData.title}</title>
     <Seo {siteData} frontmatter="post" />
-    <link rel="preload" href="/images/desktop.webp" as="image" />
+    <link rel="preload" fetchpriority="high" href="/images/desktop.webp" as="image" type="image/webp"> 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5E8FYWZR84"
     ></script>
