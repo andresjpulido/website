@@ -14,7 +14,7 @@ export default {
       computerfont: ["computerfont"],
     },
     backgroundImage: {
-      "desktop": "url('/images/desktop.png')",
+      "desktop": "url('/images/desktop.webp')",
     },
     colors: {
       one: "#0d0d0d",
